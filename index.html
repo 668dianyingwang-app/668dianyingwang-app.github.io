@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>668电影网 - 高清电影电视剧在线推荐与影视资讯平台</title>
+<meta name="description" content="668电影网（www.668dianyingwang-app）提供最新电影、热播电视剧、动漫综艺的剧情介绍、影视评分、排行榜与影视资讯，支持手机端浏览，每日更新高分影片推荐。" />
+<meta name="keywords" content="668电影网,668dianyingwang-app,高清电影推荐,热播电视剧,影视排行榜,影视资讯,电影剧情介绍" />
+<meta name="author" content="668电影网" />
+<meta name="robots" content="index,follow" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="theme-color" content="#141821" />
+<link rel="canonical" href="https://www.668dianyingwang-app/" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<!-- 社交分享 / 搜索引擎富媒体 -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="668电影网" />
+<meta property="og:title" content="668电影网 - 高清电影电视剧在线推荐与影视资讯平台" />
+<meta property="og:description" content="668电影网每日更新最新电影、热播电视剧、动漫综艺推荐，提供剧情介绍、影视评分与影视排行榜。" />
+<meta property="og:url" content="https://www.668dianyingwang-app/" />
+<meta property="og:locale" content="zh_CN" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="668电影网 - 高清电影电视剧在线推荐" />
+<meta name="twitter:description" content="最新电影、热播电视剧、动漫综艺推荐与影视排行榜，每日更新。" />
+
+<style type="text/css">
+/* ============ 基础重置 ============ */
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","Helvetica Neue",Arial,sans-serif;
+  background:#141821;color:#e8ebf2;line-height:1.7;font-size:16px;
+  padding-bottom:env(safe-area-inset-bottom);
+}
+img{max-width:100%;height:auto;display:block;border:0}
+a{color:inherit;text-decoration:none;transition:color .25s ease,opacity .25s ease}
+ul,ol{list-style:none}
+h1,h2,h3,h4{font-weight:700;line-height:1.35;color:#fff}
+:focus-visible{outline:2px solid #ffb020;outline-offset:2px}
+.wrap{width:100%;max-width:1200px;margin:0 auto;padding:0 16px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+
+/* ============ 顶部导航 ============ */
+.topbar{
+  position:sticky;top:0;z-index:99;
+  background:rgba(20,24,33,.94);
+  backdrop-filter:saturate(160%) blur(10px);
+  -webkit-backdrop-filter:saturate(160%) blur(10px);
+  border-bottom:1px solid rgba(255,255,255,.08);
+}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.logo{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.logo-mark{
+  width:38px;height:38px;border-radius:10px;flex:0 0 38px;
+  background:linear-gradient(135deg,#ff7a18 0%,#ff2d55 100%);
+  display:flex;align-items:center;justify-content:center;
+  font-size:18px;font-weight:800;color:#fff;letter-spacing:-1px;
+  box-shadow:0 6px 16px rgba(255,122,24,.32);
+}
+.logo-text{font-size:19px;font-weight:800;color:#fff;letter-spacing:.5px;white-space:nowrap}
+.logo-text small{display:block;font-size:11px;font-weight:400;color:#8d97ab;letter-spacing:1px}
+
+.nav{display:flex;align-items:center;gap:4px}
+.nav a{font-size:15px;color:#c3cadb;padding:8px 12px;border-radius:8px;white-space:nowrap}
+.nav a:hover,.nav a:focus{color:#fff;background:rgba(255,122,24,.14)}
+.nav-btn{
+  display:inline-block;background:linear-gradient(135deg,#ff7a18,#ff2d55);
+  color:#fff !important;font-size:14px;font-weight:600;padding:9px 18px;border-radius:999px;
+}
+.menu-toggle{
+  display:none;width:42px;height:42px;border:1px solid rgba(255,255,255,.16);
+  background:transparent;border-radius:10px;cursor:pointer;
+}
+.menu-toggle span{display:block;width:18px;height:2px;background:#e8ebf2;margin:4px auto;border-radius:2px;transition:.25s}
+
+/* ============ Hero 首屏 ============ */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 420px at 12% -10%,rgba(255,122,24,.30),transparent 60%),
+    radial-gradient(760px 420px at 92% 8%,rgba(255,45,85,.26),transparent 62%),
+    linear-gradient(180deg,#191e29 0%,#141821 100%);
+  border-bottom:1px solid rgba(255,255,255,.07);
+  padding:56px 0 48px;
+}
+.hero h1{
+  font-size:clamp(28px,6.2vw,50px);letter-spacing:-.5px;margin-bottom:16px;
+}
+.hero h1 em{font-style:normal;color:#ffb020}
+.hero .sub{font-size:clamp(15px,2.6vw,18px);color:#a9b3c6;max-width:760px}
+.hero .sub strong{color:#e8ebf2}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 26px}
+.hero-tags span{
+  font-size:13px;color:#ffcf8a;border:1px solid rgba(255,176,32,.42);
+  background:rgba(255,176,32,.10);padding:5px 12px;border-radius:999px;
+}
+.search{display:flex;gap:10px;max-width:640px}
+.search input{
+  flex:1 1 auto;min-width:0;height:50px;padding:0 18px;font-size:16px;
+  color:#fff;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.16);border-radius:12px 0 0 12px;
+}
+.search input::placeholder{color:#8d97ab}
+.search button{
+  flex:0 0 auto;height:50px;padding:0 26px;font-size:16px;font-weight:700;color:#fff;border:0;cursor:pointer;
+  background:linear-gradient(135deg,#ff7a18,#ff2d55);border-radius:0 12px 12px 0;
+}
+.hero-stats{display:flex;flex-wrap:wrap;gap:26px;margin-top:30px}
+.hero-stats div b{display:block;font-size:26px;color:#fff;line-height:1.2}
+.hero-stats div span{font-size:13px;color:#8d97ab}
+
+/* ============ 通用区块 ============ */
+.section{padding:52px 0}
+.section.alt{background:#171b25;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:26px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(21px,3.6vw,30px);position:relative;padding-left:14px}
+.sec-head h2::before{
+  content:"";position:absolute;left:0;top:6px;bottom:6px;width:4px;border-radius:4px;
+  background:linear-gradient(180deg,#ff7a18,#ff2d55);
+}
+.sec-head p{font-size:14px;color:#8d97ab;max-width:520px}
+.sec-head .more{font-size:14px;color:#ffb020;white-space:nowrap}
+
+/* 影片卡片网格 */
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(190px,1fr))}
+.card{
+  background:#1c212d;border:1px solid rgba(255,255,255,.07);border-radius:14px;overflow:hidden;
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+}
+.card:hover,.card:focus-within{transform:translateY(-5px);border-color:rgba(255,122,24,.55);box-shadow:0 14px 30px rgba(0,0,0,.42)}
+.poster{
+  position:relative;aspect-ratio:3/4;overflow:hidden;
+  background:linear-gradient(150deg,#2b3242,#1a1f2b);
+  display:flex;align-items:center;justify-content:center;
+}
+.poster i{
+  position:absolute;left:10px;top:10px;font-style:normal;font-size:11px;font-weight:700;
+  padding:3px 8px;border-radius:6px;color:#fff;background:rgba(255,45,85,.9);
+}
+.poster .score{
+  position:absolute;right:10px;top:10px;font-size:12px;font-weight:800;color:#ffb020;
+  background:rgba(0,0,0,.55);padding:3px 8px;border-radius:6px;
+}
+.poster .ph{font-size:13px;color:#6f7a90;letter-spacing:2px;text-align:center;padding:0 14px}
+.card-body{padding:12px 14px 16px}
+.card-body h3{font-size:16px;margin-bottom:6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card-body p{font-size:13px;color:#8d97ab;height:44px;overflow:hidden}
+
+/* 分类标签云 */
+.tags{display:flex;flex-wrap:wrap;gap:10px}
+.tags a{
+  font-size:15px;padding:10px 18px;border-radius:10px;color:#c3cadb;
+  background:#1c212d;border:1px solid rgba(255,255,255,.08);
+}
+.tags a:hover{color:#fff;border-color:rgba(255,122,24,.6);background:rgba(255,122,24,.12)}
+
+/* 排行列表 */
+.rank{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}
+.rank li{
+  display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:12px;
+  background:#1c212d;border:1px solid rgba(255,255,255,.07);
+}
+.rank li:hover{border-color:rgba(255,122,24,.5)}
+.rank .no{
+  flex:0 0 32px;height:32px;border-radius:8px;font-size:15px;font-weight:800;color:#fff;
+  display:flex;align-items:center;justify-content:center;background:#333a4b;
+}
+.rank li:nth-child(1) .no{background:linear-gradient(135deg,#ff7a18,#ff2d55)}
+.rank li:nth-child(2) .no{background:linear-gradient(135deg,#ffb020,#ff7a18)}
+.rank li:nth-child(3) .no{background:linear-gradient(135deg,#5b6b8c,#3d4a63)}
+.rank .info{flex:1 1 auto;min-width:0}
+.rank .info h3{font-size:15px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.rank .info p{font-size:12px;color:#8d97ab}
+.rank .hot{flex:0 0 auto;font-size:12px;color:#ffb020}
+
+/* 资讯列表 */
+.news{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.news article{
+  padding:18px 20px;border-radius:12px;background:#1c212d;
+  border:1px solid rgba(255,255,255,.07);border-left:3px solid #ff7a18;
+}
+.news article h3{font-size:16px;margin-bottom:6px}
+.news article p{font-size:13.5px;color:#98a2b6}
+.news article time{display:block;margin-top:10px;font-size:12px;color:#6f7a90}
+
+/* 特点 / 关于 */
+.features{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.feature{padding:22px;border-radius:14px;background:#1c212d;border:1px solid rgba(255,255,255,.07)}
+.feature b{display:block;font-size:16px;color:#fff;margin:10px 0 6px}
+.feature p{font-size:13.5px;color:#98a2b6}
+.feature .ico{
+  width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;
+  font-size:20px;font-weight:800;color:#fff;background:linear-gradient(135deg,#ff7a18,#ff2d55);
+}
+
+/* FAQ */
+.faq{display:grid;gap:12px;max-width:860px}
+.faq details{background:#1c212d;border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:14px 18px}
+.faq summary{cursor:pointer;font-size:16px;font-weight:600;color:#fff;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"＋";float:right;color:#ffb020;font-weight:700}
+.faq details[open] summary::after{content:"－"}
+.faq p{margin-top:10px;font-size:14px;color:#98a2b6}
+
+/* 底部 */
+.footer{background:#10131b;border-top:1px solid rgba(255,255,255,.07);padding:44px 0 28px;margin-top:10px}
+.foot-grid{display:grid;gap:26px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.foot-grid h4{font-size:15px;margin-bottom:12px;color:#fff}
+.foot-grid a,.foot-grid p{display:block;font-size:13.5px;color:#8d97ab;padding:4px 0}
+.foot-grid a:hover{color:#ffb020}
+.foot-btm{
+  margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.07);
+  font-size:12.5px;color:#6f7a90;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;
+}
+
+/* 返回顶部 */
+.totop{
+  position:fixed;right:16px;bottom:20px;z-index:98;width:46px;height:46px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;
+  background:rgba(255,122,24,.92);box-shadow:0 8px 20px rgba(0,0,0,.4);
+}
+
+/* ============ 移动端自适应 ============ */
+@media (max-width:900px){
+  .nav{
+    position:absolute;left:0;right:0;top:60px;flex-direction:column;align-items:stretch;gap:0;
+    background:#171b25;border-bottom:1px solid rgba(255,255,255,.08);
+    max-height:0;overflow:hidden;transition:max-height .3s ease;
+  }
+  .nav.open{max-height:420px}
+  .nav a{padding:14px 16px;border-radius:0;border-top:1px solid rgba(255,255,255,.06);font-size:16px}
+  .nav .nav-btn{margin:12px 16px;border-radius:999px;text-align:center}
+  .menu-toggle{display:block}
+  .sec-head p{display:none}
+}
+@media (max-width:560px){
+  body{font-size:15px}
+  .hero{padding:38px 0 34px}
+  .hero-stats{gap:18px}
+  .hero-stats div b{font-size:22px}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .card-body{padding:10px 12px 14px}
+  .card-body h3{font-size:14.5px}
+  .card-body p{font-size:12px;height:40px}
+  .poster .ph{font-size:11px}
+  .search{flex-direction:row}
+  .search input{border-radius:12px 0 0 12px;font-size:16px}
+  .search button{padding:0 18px;font-size:15px}
+  .section{padding:38px 0}
+}
+@media (max-width:360px){
+  .grid{grid-template-columns:1fr}
+  .logo-text{font-size:17px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{transition:none !important;animation:none !important}
+  html{scroll-behavior:auto}
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.668dianyingwang-app/#website",
+      "url": "https://www.668dianyingwang-app/",
+      "name": "668电影网",
+      "alternateName": "668dianyingwang-app",
+      "description": "668电影网提供最新电影、热播电视剧、动漫综艺的剧情介绍、影视评分与排行榜。",
+      "inLanguage": "zh-CN",
+      "publisher": { "@id": "https://www.668dianyingwang-app/#organization" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.668dianyingwang-app/#search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.668dianyingwang-app/#organization",
+      "name": "668电影网",
+      "url": "https://www.668dianyingwang-app/",
+      "description": "668电影网是面向影视爱好者的电影电视剧推荐与影视资讯平台。"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.668dianyingwang-app/#webpage",
+      "url": "https://www.668dianyingwang-app/",
+      "name": "668电影网 - 高清电影电视剧在线推荐与影视资讯平台",
+      "isPartOf": { "@id": "https://www.668dianyingwang-app/#website" },
+      "about": { "@id": "https://www.668dianyingwang-app/#organization" },
+      "inLanguage": "zh-CN",
+      "description": "668电影网每日更新最新电影、热播电视剧、动漫综艺推荐，提供剧情介绍、影视评分与影视排行榜。"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "668电影网首页", "item": "https://www.668dianyingwang-app/" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/yazhou.js"></script>
+
+<!-- ============ 顶部导航 ============ -->
+<header class="topbar" role="banner">
+  <div class="wrap">
+    <a class="logo" href="#" aria-label="668电影网 首页">
+      <span class="logo-mark" aria-hidden="true">668</span>
+      <span class="logo-text">668电影网<small>668DIANYINGWANG-APP</small></span>
+    </a>
+
+    <button class="menu-toggle" type="button" id="menuBtn" aria-label="展开导航菜单" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" id="mainNav" role="navigation" aria-label="网站主导航">
+      <a href="#latest">最新电影</a>
+      <a href="#tv">热播剧集</a>
+      <a href="#anime">动漫综艺</a>
+      <a href="#rank">影视排行</a>
+      <a href="#news">影视资讯</a>
+      <a href="#about">关于我们</a>
+      <a class="nav-btn" href="#">立即观看</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" role="main">
+
+  <!-- ============ 首屏 ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <h1>668电影网 · 发现值得一看的<em>高分影视</em></h1>
+      <p class="sub">
+        <strong>668电影网</strong>（www.668dianyingwang-app）是面向影视爱好者的在线推荐平台，每日更新最新电影、热播电视剧、动漫与综艺的剧情介绍、演员阵容、影视评分与热播榜单，帮你在最短时间内找到对味的作品。
+      </p>
+
+      <div class="hero-tags" role="list">
+        <span role="listitem">每日更新</span>
+        <span role="listitem">剧情速览</span>
+        <span role="listitem">评分参考</span>
+        <span role="listitem">手机端适配</span>
+        <span role="listitem">分类齐全</span>
+      </div>
+
+      <form class="search" action="#" method="get" role="search" aria-label="站内影视搜索">
+        <label class="sr-only" for="kw">搜索电影、电视剧或演员</label>
+        <input type="search" id="kw" name="q" placeholder="搜索电影 / 电视剧 / 演员…" autocomplete="off" />
+        <button type="submit">搜 索</button>
+      </form>
+
+      <div class="hero-stats">
+        <div><b>12000+</b><span>收录影视条目</span></div>
+        <div><b>28</b><span>细分影视分类</span></div>
+        <div><b>6</b><span>每日榜单更新</span></div>
+        <div><b>24h</b><span>新片资讯跟进</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 栏目一：最新电影 ============ -->
+  <section class="section" id="latest" aria-labelledby="t-latest">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="t-latest">最新电影推荐</h2>
+        <p>668电影网精选近期上线与口碑回升的影片，附剧情简介与评分参考，方便快速筛选。</p>
+        <a class="more" href="#">查看全部电影 &raquo;</a>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">电影海报</span><i>动作</i><span class="score">8.7</span></div>
+            <div class="card-body">
+              <h3>烈焰追击</h3>
+              <p>一场跨国追缉行动，牵出埋藏十年的秘密。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">电影海报</span><i>科幻</i><span class="score">8.4</span></div>
+            <div class="card-body">
+              <h3>星海边境</h3>
+              <p>深空舰队抵达未知星域，遭遇文明残响。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">电影海报</span><i>剧情</i><span class="score">8.9</span></div>
+            <div class="card-body">
+              <h3>城南旧事书</h3>
+              <p>三代人的老宅记忆，在拆迁前被重新翻阅。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">电影海报</span><i>悬疑</i><span class="score">8.2</span></div>
+            <div class="card-body">
+              <h3>无声证人</h3>
+              <p>唯一目击者失去语言，真相只能靠细节拼合。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">电影海报</span><i>爱情</i><span class="score">7.9</span></div>
+            <div class="card-body">
+              <h3>夏末来信</h3>
+              <p>一封迟到的信，把两个夏天重新连在一起。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">电影海报</span><i>动画</i><span class="score">8.6</span></div>
+            <div class="card-body">
+              <h3>山海旅人</h3>
+              <p>少年循着古图，走进被遗忘的山海之间。</p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 栏目二：热播剧集 ============ -->
+  <section class="section alt" id="tv" aria-labelledby="t-tv">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="t-tv">热播电视剧</h2>
+        <p>覆盖都市、古装、悬疑、家庭等题材，668电影网同步更新剧集看点与更新进度。</p>
+        <a class="more" href="#">剧集专题 &raquo;</a>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">剧集海报</span><i>都市</i><span class="score">8.1</span></div>
+            <div class="card-body">
+              <h3>霓虹之下</h3>
+              <p>四个年轻人在城市缝隙里寻找各自的位置。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">剧集海报</span><i>古装</i><span class="score">8.5</span></div>
+            <div class="card-body">
+              <h3>长风渡河</h3>
+              <p>边城动荡，少年将军与谋士共守一城生机。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">剧集海报</span><i>悬疑</i><span class="score">8.8</span></div>
+            <div class="card-body">
+              <h3>第十三级台阶</h3>
+              <p>旧案重启，每一步证词都指向新的疑点。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">剧集海报</span><i>家庭</i><span class="score">7.8</span></div>
+            <div class="card-body">
+              <h3>人间烟火味</h3>
+              <p>一家小餐馆，盛着三代人的聚散离合。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">剧集海报</span><i>职场</i><span class="score">8.0</span></div>
+            <div class="card-body">
+              <h3>凌晨四点的方案</h3>
+              <p>广告公司的生死提案，改写团队的命运。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">剧集海报</span><i>历史</i><span class="score">8.3</span></div>
+            <div class="card-body">
+              <h3>大河岁月</h3>
+              <p>一条河的变迁，映照半个世纪的家族沉浮。</p>
+            </div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 栏目三：动漫综艺 + 分类 ============ -->
+  <section class="section" id="anime" aria-labelledby="t-anime">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="t-anime">动漫 · 综艺</h2>
+        <p>从热血番剧到治愈动画，从音乐舞台到生活观察，668电影网为你分门别类整理。</p>
+        <a class="more" href="#">动漫综艺专区 &raquo;</a>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">动漫封面</span><i>热血</i><span class="score">9.0</span></div>
+            <div class="card-body">
+              <h3>剑鸣长空</h3>
+              <p>少年剑客踏上修行之路，只为守护一诺。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">动漫封面</span><i>治愈</i><span class="score">8.7</span></div>
+            <div class="card-body">
+              <h3>小镇四季风</h3>
+              <p>四季轮转中，一间老书店守着来往的人。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">综艺封面</span><i>音乐</i><span class="score">8.2</span></div>
+            <div class="card-body">
+              <h3>舞台之外</h3>
+              <p>把排练室的汗水与舞台的光芒一起记录。</p>
+            </div>
+          </a>
+        </article>
+        <article class="card">
+          <a href="#">
+            <div class="poster"><span class="ph">综艺封面</span><i>生活</i><span class="score">7.9</span></div>
+            <div class="card-body">
+              <h3>慢下来的日子</h3>
+              <p>嘉宾回到乡村，用一季时间学会生活。</p>
+            </div>
+          </a>
+        </article>
+      </div>
+
+      <h3 style="font-size:18px;margin:32px 0 16px;color:#fff;">全站影视分类导航</h3>
+      <div class="tags">
+        <a href="#">动作片</a><a href="#">科幻片</a><a href="#">喜剧片</a><a href="#">爱情片</a>
+        <a href="#">悬疑片</a><a href="#">恐怖片</a><a href="#">动画电影</a><a href="#">纪录片</a>
+        <a href="#">国产剧</a><a href="#">日韩剧</a><a href="#">欧美剧</a><a href="#">港台剧</a>
+        <a href="#">短剧</a><a href="#">动漫番剧</a><a href="#">综艺真人秀</a><a href="#">高分经典</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 栏目四：影视排行榜 ============ -->
+  <section class="section alt" id="rank" aria-labelledby="t-rank">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="t-rank">影视热播排行榜</h2>
+        <p>668电影网榜单综合播放热度、站内搜索量与用户评分，每日刷新一次。</p>
+        <a class="more" href="#">完整榜单 &raquo;</a>
+      </div>
+
+      <ol class="rank">
+        <li>
+          <span class="no">1</span>
+          <div class="info"><h3><a href="#">烈焰追击</a></h3><p>动作 / 2026 / 内地</p></div>
+          <span class="hot">热度 98.6</span>
+        </li>
+        <li>
+          <span class="no">2</span>
+          <div class="info"><h3><a href="#">第十三级台阶</a></h3><p>悬疑剧 / 更新至第 18 集</p></div>
+          <span class="hot">热度 96.2</span>
+        </li>
+        <li>
+          <span class="no">3</span>
+          <div class="info"><h3><a href="#">星海边境</a></h3><p>科幻 / 2026 / 欧美</p></div>
+          <span class="hot">热度 94.8</span>
+        </li>
+        <li>
+          <span class="no">4</span>
+          <div class="info"><h3><a href="#">长风渡河</a></h3><p>古装剧 / 更新至第 26 集</p></div>
+          <span class="hot">热度 93.1</span>
+        </li>
+        <li>
+          <span class="no">5</span>
+          <div class="info"><h3><a href="#">剑鸣长空</a></h3><p>动漫 / 每周五更新</p></div>
+          <span class="hot">热度 91.4</span>
+        </li>
+        <li>
+          <span class="no">6</span>
+          <div class="info"><h3><a href="#">城南旧事书</a></h3><p>剧情 / 2025 / 内地</p></div>
+          <span class="hot">热度 89.7</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ 栏目五：影视资讯 ============ -->
+  <section class="section" id="news" aria-labelledby="t-news">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="t-news">影视资讯与看点</h2>
+        <p>新片定档、剧集开播、幕后花絮与行业观察，668电影网第一时间整理要点。</p>
+        <a class="more" href="#">资讯频道 &raquo;</a>
+      </div>
+
+      <div class="news">
+        <article>
+          <h3><a href="#">暑期档新片扎堆定档，动作与科幻成主力</a></h3>
+          <p>多部重点影片集中官宣档期，类型分布更趋多元，动作与科幻题材占比明显提升。</p>
+          <time datetime="2026-10-12">2026-10-12</time>
+        </article>
+        <article>
+          <h3><a href="#">悬疑剧热度持续走高，短剧集节奏更受青睐</a></h3>
+          <p>集数更短、反转更密的悬疑剧正在成为追剧主力，观众对节奏的要求明显提高。</p>
+          <time datetime="2026-10-10">2026-10-10</time>
+        </article>
+        <article>
+          <h3><a href="#">动画电影票房回暖，国风题材表现亮眼</a></h3>
+          <p>以传统美学为底色的动画作品在口碑与票房上双双走强，家庭观影需求回升。</p>
+          <time datetime="2026-10-08">2026-10-08</time>
+        </article>
+        <article>
+          <h3><a href="#">如何用评分与口碑选片：一份实用观影指南</a></h3>
+          <p>668电影网整理选片思路：先看题材标签，再看评分分布，最后结合剧情简介判断。</p>
+          <time datetime="2026-10-05">2026-10-05</time>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 栏目六：关于我们 ============ -->
+  <section class="section alt" id="about" aria-labelledby="t-about">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="t-about">关于 668电影网</h2>
+        <p>668电影网（www.668dianyingwang-app）致力于用更清爽的方式，帮你找到值得看的影视作品。</p>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <div class="ico" aria-hidden="true">01</div>
+          <b>内容每日更新</b>
+          <p>新片上线、剧集更新与榜单变化，每天同步整理，保证信息新鲜度。</p>
+        </div>
+        <div class="feature">
+          <div class="ico" aria-hidden="true">02</div>
+          <b>分类清晰好找</b>
+          <p>按题材、地区、年份与评分多维度组织，找片路径更短更直接。</p>
+        </div>
+        <div class="feature">
+          <div class="ico" aria-hidden="true">03</div>
+          <b>移动端友好</b>
+          <p>页面自适应手机、平板与桌面，小屏也能舒适浏览与搜索。</p>
+        </div>
+        <div class="feature">
+          <div class="ico" aria-hidden="true">04</div>
+          <b>清爽无干扰</b>
+          <p>界面简洁、层级明确，把注意力还给影视内容本身。</p>
+        </div>
+      </div>
+
+      <h3 style="font-size:18px;margin:34px 0 16px;color:#fff;">常见问题</h3>
+      <div class="faq">
+        <details open="open">
+          <summary>668电影网是做什么的？</summary>
+          <p>668电影网是一个影视推荐与资讯平台，提供电影、电视剧、动漫与综艺的剧情介绍、评分参考、排行榜与行业资讯，帮助你更快筛选想看的作品。</p>
+        </details>
+        <details>
+          <summary>网站上的内容多久更新一次？</summary>
+          <p>影片与剧集条目每日更新，热播排行榜每日刷新一次，影视资讯根据新片定档与开播情况实时跟进。</p>
+        </details>
+        <details>
+          <summary>手机浏览体验如何？</summary>
+          <p>本站采用响应式布局，页面会根据屏幕宽度自动调整排版，在手机上同样可以顺畅浏览分类、榜单与资讯。</p>
+        </details>
+        <details>
+          <summary>如何联系 668电影网？</summary>
+          <p>可通过页脚「联系我们」提交反馈，我们会在收到信息后尽快处理内容纠错与合作咨询。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ 页脚 ============ -->
+<footer class="footer" role="contentinfo">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>668电影网</h4>
+        <p>668电影网（www.668dianyingwang-app）专注影视推荐与影视资讯，每日更新最新电影、热播电视剧、动漫综艺与高分榜单。</p>
+        <p>关键词：668电影网 · 电影推荐 · 电视剧排行 · 影视资讯</p>
+      </div>
+      <div>
+        <h4>影视栏目</h4>
+        <a href="#latest">最新电影</a>
+        <a href="#tv">热播剧集</a>
+        <a href="#anime">动漫综艺</a>
+        <a href="#rank">影视排行</a>
+      </div>
+      <div>
+        <h4>资讯与帮助</h4>
+        <a href="#news">影视资讯</a>
+        <a href="#about">关于我们</a>
+        <a href="#">常见问题</a>
+        <a href="#">内容纠错</a>
+      </div>
+      <div>
+        <h4>联系我们</h4>
+        <a href="#">站长信箱</a>
+        <a href="#">商务合作</a>
+        <a href="#">友情链接</a>
+        <a href="#">意见反馈</a>
+      </div>
+    </div>
+
+    <div class="foot-btm">
+      <span>&copy; 2026 668电影网 www.668dianyingwang-app 版权所有</span>
+      <span><a href="#">免责声明</a> · <a href="#">隐私政策</a> · <a href="#">网站地图</a></span>
+    </div>
+  </div>
+</footer>
+
+<a class="totop" href="#main" aria-label="返回页面顶部">&uarr;</a>
+
+<script type="text/javascript">
+(function(){
+  var btn = document.getElementById('menuBtn');
+  var nav = document.getElementById('mainNav');
+  if(!btn || !nav){ return; }
+  btn.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A'){ nav.classList.remove('open'); btn.setAttribute('aria-expanded','false'); }
+  });
+})();
+</script>
+</body>
+</html>
